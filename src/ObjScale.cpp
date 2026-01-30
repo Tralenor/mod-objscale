@@ -250,7 +250,7 @@ public:
             object->CustomData.GetDefault<Objscale>("scale")->scale = scale;
 
             object->SetObjectScale(scale);
-            object->DestroyForNearbyPlayers();
+            object->DestroyForVisiblePlayers();
             object->UpdateObjectVisibility();
             object->SaveToDB();
 
