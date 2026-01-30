@@ -282,7 +282,7 @@ public:
         float scale = object->GetGOInfo()->size;
 
         object->SetObjectScale(scale);
-        object->DestroyForNearbyPlayers();
+        object->DestroyForVisiblePlayers();
         object->UpdateObjectVisibility();
         object->SaveToDB();
 
